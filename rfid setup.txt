@@ -1,0 +1,10 @@
+rfid config
+raspi config
+turn on spi
+reboot
+lsmod | grep spi
+If you see spi_bcm2835, then you can proceed on with this tutorial and skip on to the next section. If for some reason it had not appeared when you entered the previous command, try following the next three steps.
+sudo nano /boot/config.txt
+ Within the configuration file, use CTRL + W to find “dtparam=spi=on“.
+If you have found it, check to see if there is a # in front of it. If there is, remove it as this is commenting out the activation line. If you can’t find the line at all, add “dtparam=spi=on” to the bottom of the file.
+lsmod | grep spi
