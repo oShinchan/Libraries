@@ -1,10 +1,15 @@
-library for ultrasonic and gas sensor and servo motor
+library for ultrasonic and gas sensor and servo motor and raindropsensor
 
 sudo apt-get install python-rpi.gpio
 data pin connection is in code
+
+
 ground is pin number 39 
 5v vcc is pin 2
 for all 3
+
+and vcc for raindropsensor is pin1 of pi that is 3.3v
+and ground pin to pin 39 of pi
 
 
 library for dht11
